@@ -1,0 +1,180 @@
+* {
+  font-family: "Roboto", sans-serif;
+}
+header {
+  position: absolute;
+  width: 100%;
+  height: 77px;
+  left: 0px;
+  top: 0px;
+  background: #8e44ad;
+  display: flex;
+}
+.logo {
+  width: 33px;
+  height: 33px;
+  margin-top: 22px;
+  margin-left: 12px;
+}
+
+.userApi {
+  width: 110px;
+  height: 33px;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 24px;
+  color: #ffffff;
+  margin-left: 48px;
+  margin-top: 22px;
+}
+
+footer {
+  position: absolute;
+  width: 100%;
+  height: 77px;
+  left: 0px;
+  margin-top: 100%;
+  background: #8e44ad;
+}
+
+.containPos {
+  margin-top: 170px;
+  margin-left: 40px;
+}
+.inputDiv {
+  display: flex;
+  flex-direction: column;
+  height: 130px;
+  width: 200px;
+  justify-content: space-around;
+}
+#inputId {
+  width: 116px;
+  height: 33px;
+  left: 48px;
+  top: 182px;
+  border-radius: 5px;
+  border: 1px solid #bdc3c7;
+  padding-left: 7px;
+}
+
+#buttonGet {
+  font-weight: 500;
+  font-size: 18px;
+  cursor: pointer;
+  height: 37px;
+  width: 127px;
+  left: 48px;
+  top: 235px;
+  border-radius: 5px;
+  border: 1px solid #bdc3c7;
+}
+
+.outputPosition {
+  padding-top: 30px;
+  width: 346px;
+  height: 197px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+#output {
+  width: 250px;
+  height: 90px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  text-align: right;
+  padding-left: 25px;
+}
+#nameMailPhone {
+  width: 70px;
+  height: 90px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  text-align: left;
+  font-weight: 400;
+}
+.userName,
+.userMail,
+.phone {
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 21px;
+}
+
+#buttonSavePosition {
+  width: 346px;
+  margin-top: -65px;
+  height: 40px;
+  display: flex;
+  justify-content: end;
+}
+
+#buttonSave {
+  font-weight: 500;
+  margin-top: 32px;
+  font-size: 18px;
+  cursor: pointer;
+  height: 37px;
+  width: 127px;
+  left: 48px;
+  top: 235px;
+  border-radius: 5px;
+  color: white;
+  border: 1px solid #bdc3c7;
+  background: #8e44ad;
+}
+
+#savedUserInfo {
+  font-weight: 500;
+  margin-left: 48px;
+  margin-top: 30px;
+}
+
+#nameList {
+  display: flex;
+  flex-direction: column;
+}
+
+#name {
+  display: flex;
+  flex-direction: column;
+}
+
+#nameRow {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 18px;
+  width: 250px;
+}
+
+#nameTitle {
+  font-weight: 400;
+  font-size: 18px;
+}
+
+#nameRow img {
+  cursor: pointer;
+}
+
+#nameRow img:active {
+  opacity: 0.5;
+}
+#listTitle {
+  opacity: 0;
+}
+
+#outputContainer {
+  border-top: 1px solid rgb(160, 160, 160);
+  border-bottom: 1px solid rgb(148, 148, 148);
+  width: 346px;
+  height: 197px;
+  display: none;
+  margin-top: 35px;
+  margin-left: 48px;
+  justify-content: space-between;
+}

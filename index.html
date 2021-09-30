@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <link rel="stylesheet" href="lesson7Style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+
+    <title>Fetch</title>
+  </head>
+  <body>
+    <header>
+      <p class="userApi">Users API</p>
+      <img class="logo" src="logo.png" alt="logo">
+    </header>
+    <div class="containPos">
+            <div class="inputDiv">
+                <!--user div-->
+                <b>User:</b>
+                <input
+                  id="inputId"
+                  type="number"
+                  placeholder="ID"
+                  min="1"
+                  max="10"
+                />
+                <button id="buttonGet" disabled="disabled">Get</button>
+              </div>
+    </div>
+    <div id="outputContainer">
+        <form class="outputPosition">
+          <div id="nameMailPhone">
+          </div>
+          <div id="output">
+          </div>
+          <div id="buttonSavePosition"></div>
+        </form>
+    </div>
+    
+    <div id="savedUserInfo">
+      <span id="listTitle">Saved:</span>
+      <div id="nameList"></div>
+    </div>
+    <footer></footer>
+    <script src="fetch.js"></script>
+  </body>
+</html>
+
+
