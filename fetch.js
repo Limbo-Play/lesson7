@@ -62,7 +62,7 @@ const updateSavedName = (nextValue) => {
 
 window.onload = () => {
   const form = document.querySelector("form");
-  getLocalMemory();
+  getLocalMemory(savedUserName);
   form.addEventListener("submit", (e) => {
     e.preventDefault();
     const nameString = e.target.children[1].children[0].firstChild.nodeValue;
@@ -100,4 +100,5 @@ const removeNameList = (currentIndex) => {
 
 const getLocalMemory = () => {
   const names = JSON.parse(localStorage.getItem("names"));
+  updateSavedName(names);
 };
