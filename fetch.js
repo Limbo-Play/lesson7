@@ -51,29 +51,29 @@ buttonGet.addEventListener("click", async () => {
   }
 });
 
-let savedUserName = [];
+let names = [];
 
 const updateSavedName = (nextValue) => {
   localStorage.setItem("names", JSON.stringify(nextValue));
   changeOpacityNameTitle(nextValue.length ? 1 : 0);
   render(nextValue);
-  savedUserName = nextValue;
+  names = nextValue;
 };
 
 window.onload = () => {
   const form = document.querySelector("form");
-  getLocalMemory(savedUserName);
+  getLocalMemory();
   form.addEventListener("submit", (e) => {
     e.preventDefault();
     const nameString = e.target.children[1].children[0].firstChild.nodeValue;
     console.log(nameString);
-    updateSavedName([...savedUserName, { list: nameString }]);
+    updateSavedName([...names, { list: nameString }]);
   });
 };
 
-const render = (savedUserName) => {
+const render = (names) => {
   const nameContainer = document.getElementById("nameList");
-  nameContainer.innerHTML = `${savedUserName
+  nameContainer.innerHTML = `${names
     .map(
       (el, index) => `<div id="name">
             <div id="nameRow">
@@ -92,9 +92,7 @@ const changeOpacityNameTitle = (value) => {
 };
 
 const removeNameList = (currentIndex) => {
-  const filtredNames = savedUserName.filter(
-    (el, index) => index !== currentIndex
-  );
+  const filtredNames = names.filter((el, index) => index !== currentIndex);
   updateSavedName(filtredNames);
 };
 
