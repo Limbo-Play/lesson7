@@ -105,5 +105,6 @@ const removeNameList = (currentIndex) => {
 
 const getLocalMemory = () => {
   const names = JSON.parse(localStorage.getItem('names'))
-  updateSavedName(names)
+  return updateSavedName(names)
 }
+getLocalMemory()
